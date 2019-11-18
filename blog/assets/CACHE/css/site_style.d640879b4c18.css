@@ -1,0 +1,29 @@
+/* line 1, d:/projekty/blog_project/src/blog/assets/css/site_style.scss */
+html {
+  /* Default style*/
+  height: 100%;
+  --bg: #FCFCFC; }
+
+/* line 16, d:/projekty/blog_project/src/blog/assets/css/site_style.scss */
+body {
+  background-color: var(--bg);
+  min-height: 100%;
+  width: 100%; }
+
+/* line 22, d:/projekty/blog_project/src/blog/assets/css/site_style.scss */
+footer aside {
+  margin: 10px, 0px, 0px, 0px; }
+
+/* line 26, d:/projekty/blog_project/src/blog/assets/css/site_style.scss */
+footer {
+  background-color: #CFCFCF;
+  margin: 0px;
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+  max-height: 2000px;
+  min-height: 2000px; }
+
+/* line 38, d:/projekty/blog_project/src/blog/assets/css/site_style.scss */
+aside {
+  float: right; }

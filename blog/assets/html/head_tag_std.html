@@ -1,0 +1,22 @@
+{% load compress %}
+{% load static %}
+
+{% if develop_mode %}
+    <meta http-equiv="refresh" content="5"/>
+{% endif %}
+
+
+<title>
+    Nazwa bloga {% if title is not None %} - {{title}} {% endif %}
+</title>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+{% compress css %}
+    <link
+        rel="stylesheet"
+        type="text/x-scss"
+        href="{% static 'css/site_style.scss' %}"
+    />
+{% endcompress %}
