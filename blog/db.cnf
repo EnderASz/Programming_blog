@@ -1,5 +1,0 @@
-[client]
-database = blog
-user = root
-password = admin
-default-character-set = utf8
