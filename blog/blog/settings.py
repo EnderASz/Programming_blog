@@ -1,8 +1,9 @@
 from split_settings.tools import include
 
-include (
-    'settings_components/base.py',
-    'settings_components/my_apps.py',
-    'settings_components/static.py',
-    'settings_components/sass_compressor.py',
+include(
+    'project_settings\\base.py',
+    'project_settings\\my_apps.py',
+    'project_settings\\static.py',
+    'project_settings\\sass_compressor.py',
+    'project_settings\\database.py',
 )

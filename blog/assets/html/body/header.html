@@ -1,0 +1,46 @@
+{% load static %}
+
+<header id="page_header" class="container">
+    <img src='{% static "img/bitmap/logo-large.png" %}' id="light_theme" class="active"/>
+    <nav>
+        <ul>
+            <li>
+                <a
+                    href="{% url 'start_page' %}"
+                    class="
+                        {% if title == 'Strona Startowa' %}
+                            active
+                        {% endif %}
+                    "
+                >
+                    Strona Startowa
+                </a>
+            </li>
+            <li>
+                <a
+                    href="/"
+                    class="
+                        {% if title == 'O mnie' %}
+                            active
+                        {% endif %}
+                    "
+                >
+                    O mnie
+                </a>
+            </li>
+            <li>
+                <a
+                    href="/"
+                    class="
+                        {% if title == 'Kontakt' %}
+                            active
+                        {% endif %}
+                    "
+                >
+                    Kontakt
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<hr>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="454"
+   height="300"
+   viewBox="0 0 120.12082 79.374996"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="no_image.svg"
+   inkscape:export-filename="D:\Projekty\blog_project\src\blog\assets\img\bitmap\no_image.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#d7d7d7"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="250.93316"
+     inkscape:cy="163.40579"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     borderlayer="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="0,132.35885"
+       orientation="1,0"
+       id="guide817"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.08578288,132.29167"
+       orientation="0,1"
+       id="guide819"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="132.29166,0.87126462"
+       orientation="1,0"
+       id="guide821"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="132.29166,4.699944e-016"
+       orientation="0,1"
+       id="guide823"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="19.075838,53.736253"
+       orientation="1,0"
+       id="guide846"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="19.463411,53.340411"
+       orientation="0,1"
+       id="guide848"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-217.62501)">
+    <g
+       id="g881"
+       transform="matrix(0.97264167,0,0,0.97264167,13.21914,1.2623827)"
+       inkscape:export-filename="D:\Projekty\blog_project\src\blog\assets\img\bitmap\g881.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         ry="3.8252783e-006"
+         rx="1.8357655e-006"
+         y="243.65959"
+         x="10.010117"
+         height="39.185356"
+         width="76.297409"
+         id="rect840"
+         style="fill:none;fill-rule:evenodd;stroke:#6d6d6d;stroke-width:2.52983975;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path856"
+         d="m 11.274343,276.97754 12.403606,-7.16122 3.834082,6.64083 19.588568,-19.58857 20.365523,20.36552 7.173027,-12.42405 10.419535,16.79648 1.248846,1.23841 H 10.010117 l -0.1595213,-4.47466 1.4237473,-1.42374"
+         style="fill:#6d6d6d;fill-opacity:1;stroke:#6d6d6d;stroke-width:0.20732993px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="D:\Projekty\blog_project\src\blog\assets\img\bitmap\no_image.png"
+         r="5.1314158"
+         cy="253.55948"
+         cx="20.428446"
+         id="path858"
+         style="fill:#6d6d6d;fill-opacity:1;stroke:#6d6d6d;stroke-width:0.37319386;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

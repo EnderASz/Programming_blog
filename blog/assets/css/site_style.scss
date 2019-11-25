@@ -1,39 +1,271 @@
-html{ /* Default style*/
+html {
     height: 100%;
+    &[data_theme="light"]{
+        --bg-color: #FFFFFF;
+        --primary-color: #689EE0;
+        --secondary-color: #000000;
+        --tertiary-color: #689EE0;
+        --quaternary-color: #6b7577;
+    }
+    &[data-theme='dark']{
 
-    --bg: #FCFCFC;
+    }
 }
 
-html[data-theme='dark']{
-
-}
-
-html[data-screen='vertical']{
-
-}
-
+html
 
 body {
     background-color: var(--bg);
     margin: 0px;
+    &.preload * {
+        transition: none !important;
+    }
 }
 
-footer aside {
-    margin: 10px, 0px, 0px, 0px;
+hr {
+    clear: both;
+    margin: 0px;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1260px;
+    margin-left: 6%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#page_header{
+    width: 80%;
+    box-sizing: border-box;
+
+    min-height: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    img {
+        vertical-align: middle;
+        height: 110px;
+        width: auto;
+    }
+    button {
+        .invisible {
+            display: none;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+    }
+    nav {
+        float: right;
+        display: inline-block;
+        font-family: 'Cabin';
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 24px 0px 24px 0px;
+        ul {
+            margin: 0px;
+            list-style-type: none;
+            li {
+            float: left;
+            padding: 20px;
+                a {
+                    color: var(--secondary-color);
+                    text-decoration: none;
+                    transition: color 0.2s;
+                    &.active {
+                        color: var(--primary-color);
+                    }
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 80%;
+    padding-top: 30px;
+    display: inline-block;
+
+    @media screen and (max-width: 980px) {
+        &.container {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        &.container{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    #content_area {
+        box-sizing: border-box;
+        margin: 0px;
+        text-align: initial;
+
+        width: 70%;
+        float: left;
+        @media screen and (max-width: 980px) {
+            width: 100%;
+            float: none;
+        }
+
+        #post_wrapper {
+            article { /*Poniżej 1300px szerokości ekranu post_excerpt ma znikać*/
+                padding-bottom: 25px;
+                #post_image img {
+                    width: 50%;
+                }
+                #post_content {
+                    width: 49%;
+                    float: right;
+                    padding-left: 1%;
+                    #post_header {
+                        #post_title {
+                            font-family: 'Cabin';
+                            font-weight: bold;
+                            font-size: 24px;
+                            margin: 0 0 5px 0;
+                            @media screen and (max-width: 600px) {
+                                font-size: 20px;
+                            }
+                            @media screen and (max-width: 560px) {
+                                font-size: 18px;
+                            }
+                            a {
+                                text-decoration: none;
+                                color: var(--primary-color);
+                                transition: color 0.3s;
+                                &:hover{
+                                    color: var(--secondary-color);
+                                    transition: color 0.3s;
+                                }
+                            }
+                            transition: font-size 1s;
+                        }
+                        #post_meta {
+                            font-family: 'Cabin';
+                            color: var(--quaternary-color);
+                            font-size: 11px;
+                            a {
+                                text-decoration: none;
+                                color: var(--quaternary-color);
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    #post_excerpt {
+                        font-family: 'Ubuntu';
+                        font-size: 15px;
+                        @media screen and (max-width: 1300px){
+                            opacity: 0;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #sidebar {
+        padding: 0px 25px;
+        margin: 0px;
+        text-align: initial;
+
+        width: 30%;
+        float: right;
+        @media screen and (max-width: 980px) {
+            width: 100%;
+            float: none;
+        }
+        aside {
+            margin-bottom: 15px;
+            border-radius: 3px;
+            border-width: 2px;
+            border-color: var(--primary-color);
+            border-style: solid;
+            .widget_header {
+                background-color: var(--primary-color);
+
+                .widget_title{
+                    margin: 0px;
+                    padding: 15px 3px;
+                    font-family: 'Cabin';
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                }
+            }
+            #tags_list {
+                list-style-type: square;
+                padding-left: 25px;
+                li {
+                    padding-bottom: 4px;
+                    font-size: 13px;
+                    position: relative;
+                    top: -2px;
+                    a {
+                        position: relative;
+                        top: 1px;
+
+                        font-size: 14.6px;
+                        font-family: 'Arvo';
+                        text-decoration: none;
+                        color: var(--primary-color);
+                        &:hover {
+                            transition: color 0.2s;
+                            color: var(--secondary-color);
+                        }
+                    }
+                }
+            }
+            #recent-posts_list {
+                padding-left: 22px;
+                li {
+                    font-family: 'Arvo';
+                    font-size: 13.4px;
+                    padding-bottom: 4px;
+                    a {
+                        position: relative;
+                        left: 3px;
+
+                        text-decoration: none;
+                        font-size: 14.6px;
+                        font-weight: normal;
+                        color: var(--primary-color);
+                        &:hover {
+                            transition: color 0.2s;
+                            color: var(--secondary-color);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 footer {
-    background-color: #CFCFCF;
-
-    margin: 0px;
-    margin-top: 10px;
-
-    height: auto;
+    clear: both;
     width: 100%;
-    max-height: 200px;
-    min-height: 125px;
-}
 
-aside {
-    float: right;
+    #credit {
+        p {
+            margin: 0px;
+            padding: 15px 20px;
+
+            font-family: 'Ubuntu';
+            font-size: 0.85em;
+        }
+    }
+
 }

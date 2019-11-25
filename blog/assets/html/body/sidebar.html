@@ -1,0 +1,39 @@
+<section id="sidebar" class="container">
+    <aside id="search-box">
+
+    </aside>
+    <aside id="recent-posts">
+        <header class="widget_header">
+            <h3 class="widget_title">Ostatnie Posty</h3>
+        </header>
+        <ol id="recent-posts_list">
+            {% for post in recent_posts %}
+                <li>
+                    <a href="post/{{post.url}}">{{post.title}}</a>
+                </li>
+            {% endfor %}
+
+            <li><a href="/">testowy tag</a></li>
+            <li><a href="/">testowy tag</a></li>
+            <li><a href="/">testowy tag</a></li>
+
+        </ol>
+    </aside>
+    <aside id="tags">
+        <header class="widget_header">
+            <h3 class="widget_title">Kategorie</h3>
+        </header>
+        <ul id="tags_list">
+            {% for tag in avaible_tags %}
+                <li>
+                    <a href="/tag/{{tag.url}}">{{tag.display_name}}</a>
+                </li>
+            {% endfor %}
+
+            <li><a href="/">testowy tag</a></li>
+            <li><a href="/">testowy tag</a></li>
+            <li><a href="/">testowy tag</a></li>
+
+        </ul>
+    </aside>
+</section>

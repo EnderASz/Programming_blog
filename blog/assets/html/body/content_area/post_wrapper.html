@@ -1,0 +1,37 @@
+<div id="post_wrapper">
+    {% for post in posts_wrap %}
+        <article id="post-{{post.post_id}}">
+            <a href="post/{{post.code_name}}" id="post_image">
+                <img src="{{post.image}}">
+            </a>
+            <section id="post_content">
+                <header id="post_header">
+                    <h3 id="post_title">
+                        <a href="post/{{post.url}}">
+                            {{post.title}}
+                        </a>
+                    </h3>
+                    <nav id="post_meta">
+                        {{post.meta.add_date}}
+                        &#9675;
+                        <a href="author/{{post.meta.author.url}}">
+                            {{post.meta.author.display_name}}
+                        </a>
+                        &#9675;
+                        {% for tag in post.meta.tags %}
+                            <a href="tag/{{tag.url}}">
+                                {{tag.display_name}}
+                            </a>
+                            {% if not forloop.last %}|{% endif %}
+                        {% endfor %}
+                    </nav>
+                </header>
+                <div id="post_excerpt">
+                    <p>
+                        Basic introduction to… is a series explaining programming concepts in an easy and understandable manner – and todays being “basic introduction to Arrays”.
+                    </p>
+                </div>
+            </section>
+        </article>
+    {% endfor %}
+</div>

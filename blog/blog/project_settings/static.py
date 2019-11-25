@@ -14,7 +14,6 @@ STATICFILES_DIRS = [
 STATIC_URL = '/assets/'
 STATIC_ROOT = ""
 
-#HTML TEMPLATES
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

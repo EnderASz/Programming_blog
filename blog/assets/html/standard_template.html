@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html data_theme="light">
+    <head>
+        {% include 'head\\head_tag_std.html' %}
+    </head>
+    <body class="preload">
+        {% include 'body\\header.html' %}
+        <main class="container">
+            <section id="content_area" class="container">
+                {% if 'post_wrapper' in content %}
+                    {% include 'body\\content_area\\post_wrapper.html' %}
+                {% endif %}
+            </section>
+            {% include 'body\\sidebar.html' %}
+        </main>
+        {% include 'body\\footer.html' %}
+    </body>
+</html>
