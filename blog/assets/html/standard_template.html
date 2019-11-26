@@ -7,7 +7,7 @@
         {% include 'body\\header.html' %}
         <main class="container">
             <section id="content_area" class="container">
-                {% if 'post_wrapper' in content %}
+                {% if 'post_wrapper' in display_content %}
                     {% include 'body\\content_area\\post_wrapper.html' %}
                 {% endif %}
             </section>

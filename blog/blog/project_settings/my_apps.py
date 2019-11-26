@@ -7,10 +7,11 @@ INSTALLED_APPS += [
     'apps.tags_manager',
     'apps.authors_manager',
     'apps.posts_manager',
-    'apps.start',
+    'apps.start_pages',
 ]
 
 
-class PostsListingSettings:
-    max_posts_per_page = 10
-    max_recent_posts = 5
+POSTSLISTING = {
+    'MAX_POSTS_PER_PAGE': 10,
+    'MAX_RECENT_POSTS': 5
+}

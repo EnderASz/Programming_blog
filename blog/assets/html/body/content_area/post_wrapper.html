@@ -1,26 +1,33 @@
 <div id="post_wrapper">
     {% for post in posts_wrap %}
-        <article id="post-{{post.post_id}}">
-            <a href="post/{{post.code_name}}" id="post_image">
-                <img src="{{post.image}}">
+        <article id="post-{{post.post_info.post_id}}">
+            <a href="post/{{post.post_info.post_slug}}" id="post_image">
+                <img src="{{post.post_info.post_image}}">
             </a>
             <section id="post_content">
                 <header id="post_header">
                     <h3 id="post_title">
-                        <a href="post/{{post.url}}">
-                            {{post.title}}
+                        <a href="post/{{post.post_info.post_slug}}">
+                            {{post.post_info.post_title}}
                         </a>
                     </h3>
                     <nav id="post_meta">
-                        {{post.meta.add_date}}
+                        {{post.post_info.date_add}}
                         &#9675;
+
+                        {% for author in post.meta.authors %}
+                            <a id="author-{{author.author_id}}" href="author/{{author.author_slug}}">
+                                {{author.author_name}}
+                            </a>
+                            {% if not forloop.last %}|{% endif %}
+                        {% endfor %}
                         <a href="author/{{post.meta.author.url}}">
-                            {{post.meta.author.display_name}}
-                        </a>
+                            {{post.meta.author.author_name}}
                         &#9675;
+
                         {% for tag in post.meta.tags %}
-                            <a href="tag/{{tag.url}}">
-                                {{tag.display_name}}
+                            <a id="tag.tag_id" href="tag/{{tag.tag_slug}}">
+                                {{tag.tag_name}}
                             </a>
                             {% if not forloop.last %}|{% endif %}
                         {% endfor %}
