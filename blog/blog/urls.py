@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/default', admin.site.urls, name="default_admin_panel"),
-    path('', include('apps.start.urls')),
+    path('', include('apps.start_pages.urls')),
 ]

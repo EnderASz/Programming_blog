@@ -6,6 +6,11 @@
     <body class="preload">
         {% include 'body\\header.html' %}
         <main class="container">
+            <header>
+                {% if page_destination == 'search-page' %}
+                    <h4>Wyniki wyszukiwania dla frazy: {{search_phrase}}</h4>
+                {% endif %}
+            </header>
             <section id="content_area" class="container">
                 {% if 'post_wrapper' in display_content %}
                     {% include 'body\\content_area\\post_wrapper.html' %}
