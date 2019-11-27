@@ -14,13 +14,7 @@ class Post(models.Model):
         upload_to=static('post_content\\images\\thumbnails\\')[1:],
         default=static('img\\bitmap\\no_image.png')[1:]
     )
+    post_content = models.TextField()
     date_add = models.DateField(auto_now_add=True)
-
-
-class AuthorShip(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
-
-class TagShip(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
-    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
+    authors = models.ManyToManyField(Author)
+    tags = models.ManyToManyField(Tag)

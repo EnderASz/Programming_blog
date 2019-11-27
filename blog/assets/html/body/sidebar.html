@@ -9,7 +9,7 @@
         <ol id="recent-posts_list">
             {% for post in recent_posts %}
                 <li>
-                    <a href="post/{{post.url}}">{{post.title}}</a>
+                    <a id="post-{{post.post_id}}" href="post/{{post.post_slug}}">{{post.post_title}}</a>
                 </li>
             {% endfor %}
         </ol>
@@ -21,7 +21,7 @@
         <ul id="tags_list">
             {% for tag in avaible_tags %}
                 <li>
-                    <a href="/tag/{{tag.url}}">{{tag.display_name}}</a>
+                    <a href="/tag/{{tag.tag_slug}}">{{tag.tag_name}}</a>
                 </li>
             {% endfor %}
         </ul>

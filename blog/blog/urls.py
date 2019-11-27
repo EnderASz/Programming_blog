@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/default', admin.site.urls, name="default_admin_panel"),
+    path('admin', admin.site.urls),
     path('', include('apps.start_pages.urls')),
 ]
