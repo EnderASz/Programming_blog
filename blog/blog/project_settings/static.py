@@ -18,7 +18,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, "assets\\html"),
+            os.path.join(BASE_DIR, "assets/html"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

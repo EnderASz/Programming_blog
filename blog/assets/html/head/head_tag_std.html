@@ -2,7 +2,7 @@
 {% load static %}
 
 
-{% include 'head\\load_favicon.html' %}
+{% include 'head/load_favicon.html' %}
 <title>
     Amator Programista {% if title is not None %} | {{title}} {% endif %}
 </title>
@@ -10,14 +10,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <meta charset="utf-8"/>
-{% include 'head\\load_fonts.html' %}
+{% include 'head/load_fonts.html' %}
 
 {% compress css %}
     <link
         rel="stylesheet"
         type="text/x-scss"
-        href="{% static 'css\\site_style.scss' %}"
+        href="{% static 'css/site_style.scss' %}"
     />
 {% endcompress %}
 
-{% include 'head\\load_scripts.html '%}
+{% include 'head/load_scripts.html '%}
