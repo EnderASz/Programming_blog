@@ -1,6 +1,8 @@
 <section id="sidebar" class="container">
     <aside id="search-box">
+        <form>
 
+        </form>
     </aside>
     <aside id="recent-posts">
         <header class="widget_header">
@@ -21,7 +23,7 @@
         <ul id="tags_list">
             {% for tag in avaible_tags %}
                 <li>
-                    <a href="/tag/{{tag.tag_slug}}">{{tag.tag_name}}</a>
+                    <a href="{% url 'search-by-tag' tag_slug=tag.tag_slug %}">{{tag.tag_name}}</a>
                 </li>
             {% endfor %}
         </ul>

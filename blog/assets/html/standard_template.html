@@ -7,8 +7,18 @@
         {% include 'body\\header.html' %}
         <main class="container">
             <header>
-                {% if page_destination == 'search-page' %}
-                    <h4>Wyniki wyszukiwania dla frazy: {{search_phrase}}</h4>
+                {% if page_destination == 'search' %}
+                    <h4 id="search-result_header">
+                        Wyniki wyszukiwania dla
+                        {% if 'search_by' == 'tag' %}
+                            kategorii:
+                        {% elif 'search_by' == 'author' %}
+                            autora:
+                        {% else %}
+                            hasła:
+                        {% endif %}
+                        {{searching_object}}
+                    </h4>
                 {% endif %}
             </header>
             <section id="content_area" class="container">

@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin', admin.site.urls),
     path('', include('apps.start_pages.urls')),
+    path('search', include('apps.search_posts.urls')),
 ]
