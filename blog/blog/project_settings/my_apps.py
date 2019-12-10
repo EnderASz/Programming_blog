@@ -8,6 +8,7 @@ INSTALLED_APPS += [
     'apps.authors_manager',
     'apps.posts_manager',
     'apps.start_pages',
+    'apps.search_posts',
 ]
 
 
