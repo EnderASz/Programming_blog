@@ -2,3 +2,4 @@ blog/assets/CACHE/
 __pycache__/
 db.sqlite3
 migrations/
+posts_content/
