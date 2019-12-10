@@ -17,7 +17,7 @@ ALLOWED_HOSTS = [
     '192.168.100.8',
     '127.0.0.1',
     '192.168.56.1',
-    'enderasz.pythonanywhere.com',
+    'endersza.pythonanywhere.com',
 ]
 
 
