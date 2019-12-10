@@ -10,7 +10,7 @@ STATICFILES_FINDERS += [
     'compressor.finders.CompressorFinder',
 ]
 
-COMPRESS_ROOT = 'Programming_blog/blog/assets/'
+COMPRESS_ROOT = STATIC_ROOT
 
 COMPRESS_PRECOMPILERS = [
     ('text/x-scss', 'django_libsass.SassCompiler'),
