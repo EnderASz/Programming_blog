@@ -14,6 +14,8 @@ def start_page(request, page_number=0):
     first_index = page_number*max_posts_per_page
     last_index = first_index+max_posts_per_page
 
+    test = os.path.join(BASE_DIR, 'db.sqlite3')
+
     all_posts = Post.objects.order_by('-date_add')
     posts_wrap = all_posts[first_index:last_index]
 
