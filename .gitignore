@@ -1,2 +1,3 @@
 blog/assets/CACHE/
 __pycache__/
+db.sqlite3
