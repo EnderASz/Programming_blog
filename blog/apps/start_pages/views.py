@@ -26,7 +26,7 @@ def start_page(request, page_number=1):
                 'posts_wrap': posts_wrap,
                 'page_info': {
                     #'pages_amount': all_posts.count()//max_posts_per_page,
-                    'pages_amount': 5,
+                    'pages_amount': 2,
                     'current_page': page_number,
                 }
             }
