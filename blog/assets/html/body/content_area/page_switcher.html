@@ -3,7 +3,7 @@
         <ol>
             <li>
                 {% if page_info.current_page > 1 %}
-                    <a href="{% url 'start_page_int' page_number=page_info.current_page|add:-1 %}" id="previous_page">
+                    <a href="{% url 'start_page_int' page_number=page_info.current_page|add:-1 %}" id="previous_page" class="bold_link">
                         {{page_info.current_page|add:-1}}
                     </a>
                 {% endif %}
@@ -15,7 +15,7 @@
             </li>
             <li>
                 {% if page_info.current_page < page_info.pages_amount %}
-                    <a href="{% url 'start_page_int' page_number=page_info.current_page|add:1 %}" id="next_page">
+                    <a href="{% url 'start_page_int' page_number=page_info.current_page|add:1 %}" id="next_page" class="bold_link">
                         {{page_info.current_page|add:1}}
                     </a>
                 {% endif %}
