@@ -2,7 +2,7 @@
     <ol>
         <li>
             {% if page_info.current_page > 1 %}
-                {{page_info.current_page|add:-5}}
+                {{page_info.current_page|add:-1}}
             {% endif %}
         </li>
         <li id="current_page_index">
@@ -10,7 +10,7 @@
         </li>
         <li>
             {% if page_info.current_page < page_info.pages_amount %}
-                {{page_info.current_page+1}}
+                {{page_info.current_page|add:1}}
             {% endif %}
         </li>
     <ol>
