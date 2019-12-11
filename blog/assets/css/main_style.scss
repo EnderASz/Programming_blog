@@ -176,9 +176,16 @@ main {
         #page_switcher{
             ol {
                 list-style-type: none;
-                #current_page_index {
-                    border-radius: 3px;
-                    border-color: var(--primary-color);
+                li {
+                    float: left;
+                    height: 100px;
+                    height: 100px;
+                    &#current_page_index {
+                        border-radius: 3px;
+                        border-width: 2px;
+                        color: var(--primary-color);
+                        border-color: var(--primary-color);
+                    }
                 }
             }
         }
