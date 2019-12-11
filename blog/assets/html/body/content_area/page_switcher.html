@@ -1,23 +1,25 @@
-<nav id="page_switcher">
-    <ol>
-        <li>
-            {% if page_info.current_page > 1 %}
-                <a href="{% url 'start_page_int' page_number=page_info.current_page|add:-1 %}" id="previous_page">
-                    {{page_info.current_page|add:-1}}
+<center>
+    <nav id="page_switcher">
+        <ol>
+            <li>
+                {% if page_info.current_page > 1 %}
+                    <a href="{% url 'start_page_int' page_number=page_info.current_page|add:-1 %}" id="previous_page">
+                        {{page_info.current_page|add:-1}}
+                    </a>
+                {% endif %}
+            </li>
+            <li id="current_page_index">
+                <a href="{% url 'start_page_int' page_number=page_info.current_page %}" id="next_page" class="active bold_link">
+                    {{page_info.current_page}}
                 </a>
-            {% endif %}
-        </li>
-        <li id="current_page_index">
-            <a href="{% url 'start_page_int' page_number=page_info.current_page %}" id="next_page" class="active bold_link">
-                {{page_info.current_page}}
-            </a>
-        </li>
-        <li>
-            {% if page_info.current_page < page_info.pages_amount %}
-                <a href="{% url 'start_page_int' page_number=page_info.current_page|add:1 %}" id="next_page">
-                    {{page_info.current_page|add:1}}
-                </a>
-            {% endif %}
-        </li>
-    <ol>
-</nav>
+            </li>
+            <li>
+                {% if page_info.current_page < page_info.pages_amount %}
+                    <a href="{% url 'start_page_int' page_number=page_info.current_page|add:1 %}" id="next_page">
+                        {{page_info.current_page|add:1}}
+                    </a>
+                {% endif %}
+            </li>
+        <ol>
+    </nav>
+</center>
