@@ -33,6 +33,18 @@ hr {
     padding-right: 35px;
 }
 
+a.bold_link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+    &.active {
+        color: var(--primary-color);
+    }
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
 #page_header{
     width: 80%;
     box-sizing: border-box;
@@ -67,17 +79,6 @@ hr {
             li {
             float: left;
             padding: 20px;
-                a {
-                    color: var(--secondary-color);
-                    text-decoration: none;
-                    transition: color 0.2s;
-                    &.active {
-                        color: var(--primary-color);
-                    }
-                    &:hover {
-                        color: var(--primary-color);
-                    }
-                }
             }
         }
     }
