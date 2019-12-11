@@ -189,6 +189,8 @@ main {
                     height: 25px;
                     width: 25px;
                     &#current_page_index {
+                        position: relative;
+                        top: -2px;
                         border-radius: 3px;
                         border-width: 2px;
                         border-style: solid;
