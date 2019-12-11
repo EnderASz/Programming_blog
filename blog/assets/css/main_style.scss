@@ -180,6 +180,7 @@ main {
             margin: 0px;
             text-align: center;
             display: inline-block;
+            margin: 0px auto;
             ol {
                 display: inline-block;
                 list-style-type: none;
@@ -190,6 +191,7 @@ main {
                     float: left;
                     height: 25px;
                     width: 25px;
+                    color: var(--secondary-color);
                     &#current_page_index {
                         position: relative;
                         top: -4px;
