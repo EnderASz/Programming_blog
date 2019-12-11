@@ -182,8 +182,9 @@ main {
                 display: inline-block;
                 list-style-type: none;
                 li {
+                    box-sizing: border-box;
                     font-family: 'Cabin';
-                    font-size: 15px; 
+                    font-size: 15px;
                     float: left;
                     height: 25px;
                     width: 25px;
@@ -191,6 +192,8 @@ main {
                         border-radius: 3px;
                         border-width: 2px;
                         border-style: solid;
+                        height: 30px;
+                        width: 30px;
                         color: var(--primary-color);
                         border-color: var(--primary-color);
                     }
