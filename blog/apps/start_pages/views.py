@@ -6,9 +6,9 @@ from apps.tags_manager.models import Tag
 
 from assets.python import std_template_funcs as template_funcs
 
-def start_page(request, page_number=0):
+def start_page(request, page_number=1):
     max_posts_per_page = settings.POSTSLISTING['MAX_POSTS_PER_PAGE']
-    first_index = page_number*max_posts_per_page
+    first_index = (page_number-1)*max_posts_per_page
     last_index = first_index+max_posts_per_page
 
     all_posts = Post.objects.order_by('-date_add')
