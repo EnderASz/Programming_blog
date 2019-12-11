@@ -25,7 +25,8 @@
                 {% if 'post_wrapper' in display_content %}
                     {% include 'body/content_area/post_wrapper.html' %}
                 {% endif %}
-                {% if 'page_switcher' in display_content and pages_amount >= 1 %}
+                {% if 'page_switcher' in display_content and page_info.pages_amount >= 1 %}
+                test
                     {% include 'body/content_area/page_switcher.html' %}
                 {% endif %}
             </section>
