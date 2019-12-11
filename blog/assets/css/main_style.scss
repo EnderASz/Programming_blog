@@ -176,15 +176,17 @@ main {
         #page_switcher{
             position: absolute;
             bottom: 0px;
+            margin: 0px;
             ol {
                 list-style-type: none;
                 li {
                     float: left;
-                    height: 100px;
-                    height: 100px;
+                    height: 15px;
+                    width: 15px;
                     &#current_page_index {
                         border-radius: 3px;
-                        border-width: 2px;
+                        border-width: 3px;
+                        border-style: solid;
                         color: var(--primary-color);
                         border-color: var(--primary-color);
                     }
