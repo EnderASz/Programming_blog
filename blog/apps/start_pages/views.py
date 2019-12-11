@@ -4,7 +4,7 @@ from django.conf import settings
 from apps.posts_manager.models import Post
 from apps.tags_manager.models import Tag
 
-from assets.python import std_template_funcs
+from assets.python import std_template_funcs as template_funcs
 
 def start_page(request, page_number=0):
     max_posts_per_page = settings.POSTSLISTING['MAX_POSTS_PER_PAGE']
@@ -20,8 +20,8 @@ def start_page(request, page_number=0):
             {
                 'title': "Strona Startowa",
                 'page_destinations' : ['start-page', 'posts_list'],
-                'avaible_tags' : std_template_loads.get_all_tags(),
-                'recent_posts' : std_template_loads.get_recent_posts(all_posts),
+                'avaible_tags' : template_funcs.get_all_tags(),
+                'recent_posts' : template_funcs.get_recent_posts(all_posts),
                 'display_content': ['post_wrapper', 'page_switcher'],
                 'posts_wrap': posts_wrap,
                 'page_info': {
