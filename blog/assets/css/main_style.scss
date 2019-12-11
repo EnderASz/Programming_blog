@@ -177,15 +177,17 @@ main {
             position: absolute;
             bottom: 0px;
             margin: 0px;
+            text-align: center;
             ol {
+                display: inline-block;
                 list-style-type: none;
                 li {
                     float: left;
-                    height: 15px;
-                    width: 15px;
+                    height: 25px;
+                    width: 25px;
                     &#current_page_index {
                         border-radius: 3px;
-                        border-width: 3px;
+                        border-width: 2px;
                         border-style: solid;
                         color: var(--primary-color);
                         border-color: var(--primary-color);
