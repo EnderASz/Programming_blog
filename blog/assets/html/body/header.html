@@ -7,17 +7,17 @@
     <nav>
         <ul>
             <li>
-                <a href="{% url 'start_page' %}" class="{% if page_destination == 'start_page' %} active {% endif %}">
+                <a href="{% url 'start_page' %}" class="{% if 'start_page' in page_destinations %} active {% endif %}">
                         Strona Startowa
                 </a>
             </li>
             <li>
-                <a href="/" class="{% if page_destination == 'about_me' %} active {% endif %}">
+                <a href="/" class="{% if 'about_me' in page_destinations %} active {% endif %}">
                     O mnie
                 </a>
             </li>
             <li>
-                <a href="/" class="{% if page_destination == 'contact' %} active {% endif %}">
+                <a href="/" class="{% if 'contact' in page_destinations %} active {% endif %}">
                     Kontakt
                 </a>
             </li>

@@ -7,7 +7,7 @@
         {% include 'body/header.html' %}
         <main class="container">
             <header>
-                {% if page_destination == 'search' %}
+                {% if 'search' in page_destinations %}
                     <h4 id="search-result_header">
                         Wyniki wyszukiwania dla
                         {% if 'search_by' == 'tag' %}
@@ -24,6 +24,9 @@
             <section id="content_area" class="container">
                 {% if 'post_wrapper' in display_content %}
                     {% include 'body/content_area/post_wrapper.html' %}
+                {% endif %}
+                {% if 'page_switcher' in display_content %}
+                    {% include 'body/content_area/page_switcher.html' %}
                 {% endif %}
             </section>
             {% include 'body/sidebar.html' %}
