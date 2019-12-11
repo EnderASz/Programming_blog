@@ -33,15 +33,17 @@ hr {
     padding-right: 35px;
 }
 
-a.bold_link {
-    color: var(--secondary-color);
+a {
     text-decoration: none;
-    transition: color 0.2s;
-    &.active {
-        color: var(--primary-color);
-    }
-    &:hover {
-        color: var(--primary-color);
+    &.bold_link {
+        color: var(--secondary-color);
+        transition: color 0.2s;
+        &.active {
+            color: var(--primary-color);
+        }
+        &:hover {
+            color: var(--primary-color);
+        }
     }
 }
 
