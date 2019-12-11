@@ -19,7 +19,7 @@ def start_page(request, page_number=1):
         'standard_template.html',
             {
                 'title': "Strona Startowa",
-                'page_destinations' : ['start-page', 'posts_list'],
+                'page_destinations' : ['start_page', 'posts_list'],
                 'avaible_tags' : template_funcs.get_all_tags(),
                 'recent_posts' : template_funcs.get_recent_posts(all_posts),
                 'display_content': ['post_wrapper', 'page_switcher'],
