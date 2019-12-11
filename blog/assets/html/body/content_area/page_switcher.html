@@ -2,7 +2,7 @@
     <ol>
         <li>
             {% if page_info.current_page > 1 %}
-                {{page_info.current_page-1}}
+                {{page_info.current_page|add:-5}}
             {% endif %}
         </li>
         <li id="current_page_index">
