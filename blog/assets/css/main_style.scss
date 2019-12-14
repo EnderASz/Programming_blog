@@ -56,17 +56,10 @@ a {
     padding-bottom: 5px;
     img {
         vertical-align: middle;
-        height: 110px;
+        height: 100px;
         width: auto;
     }
-    button {
-        .invisible {
-            display: none;
-            position: absolute;
-            right: 0px;
-            top: 0px;
-        }
-    }
+
     nav {
         float: right;
         display: inline-block;
@@ -75,15 +68,34 @@ a {
         text-decoration: none;
         font-size: 18px;
         margin: 24px 0px 24px 0px;
-        ul {
+        button {
+            display: none;
+            @media screen and (max-width: 964px) {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        #nav_list {
             margin: 0px;
             list-style-type: none;
             li {
-            float: left;
-            padding: 20px;
+                float: left;
+                padding: 20px;
+            }
+            @media screen and (max-width: 964px) {
+                display: none;
+                &.unrolled {
+                    display: block;
+                    text-align: center;
+                    li {
+                        float: none;
+                        position: absolute;
+                        padding: 0px;
+                    }
+                }
             }
         }
-    }
 }
 
 main {

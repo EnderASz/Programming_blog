@@ -5,7 +5,8 @@
         <img src='{% static "img/bitmap/logo-large.png" %}'/>
     </a>
     <nav>
-        <ul>
+        <button id="nav_toggle_bt"></button>
+        <ul id="nav_list" class="">
             <li>
                 <a href="{% url 'start_page' %}" class="{% if 'start_page' in page_destinations %} active {% endif %} bold_link">
                         Strona Startowa
