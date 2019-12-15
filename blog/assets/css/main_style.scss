@@ -121,8 +121,10 @@ main {
     &>header {
         h2 {
             font-family: 'Cabin';
-            font-size: 21px;
+            font-size: 24px;
+            font-weight: bold;
             color: var(--secondary-color);
+            margin: 0;
         }
         h4 {
 
