@@ -17,7 +17,7 @@ def tag_search(request, tag_slug):
                 'searching_object': "#tag name#",
                 'avaible_tags' : template_funcs.get_all_tags(),
                 'recent_posts' : template_funcs.get_recent_posts(),
-                'display_content': [],
+                'display_elements': ['sidebar'],
             }
     )
 
@@ -32,6 +32,6 @@ def author_search(request, tag_slug):
                 'searching_object': "#author name#",
                 'avaible_tags' : template_funcs.get_all_tags(),
                 'recent_posts' : template_funcs.get_recent_posts(),
-                'display_content': [],
+                'display_elements': ['sidebar'],
             }
     )

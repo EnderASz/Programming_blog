@@ -90,6 +90,7 @@ a {
                     text-align: center;
                     li {
                         float: none;
+                        clear: both;
                         position: absolute;
                         padding: 0px;
                     }
@@ -117,6 +118,17 @@ main {
         }
     }
 
+    &>header {
+        h2 {
+            font-family: 'Cabin';
+            font-size: 21px;
+            color: var(--secondary-color);
+        }
+        h4 {
+
+        }
+    }
+
     #content_area {
         box-sizing: border-box;
         margin: 0px;
@@ -130,7 +142,7 @@ main {
         }
 
         #post_wrapper {
-            article { /*Poniżej 1300px szerokości ekranu post_excerpt ma znikać*/
+            article {
                 padding-bottom: 25px;
                 #post_image img {
                     width: 50%;
@@ -179,10 +191,7 @@ main {
                         font-family: 'Ubuntu';
                         font-size: 15px;
                         @media screen and (max-width: 1300px){
-                            opacity: 0;
-                            position: absolute;
-                            top: 0px;
-                            left: 0px;
+                            display: none;
                         }
                     }
                 }

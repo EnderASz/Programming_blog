@@ -20,16 +20,29 @@
                         {{searching_object}}
                     </h4>
                 {% endif %}
+                {% if 'about_me' in page_destinations or 'contact' in page_destinations %}
+                    <h2>
+                        {{title}}
+                    </h2>
+                {% endif %}
             </header>
             <section id="content_area" class="container">
-                {% if 'post_wrapper' in display_content %}
+                {% if 'post_wrapper' in display_elements %}
                     {% include 'body/content_area/post_wrapper.html' %}
+                    {% if 'page_switcher' in display_elements and page_info.pages_amount >= 1 %}
+                        {% include 'body/content_area/page_switcher.html' %}
+                    {% endif %}
                 {% endif %}
-                {% if 'page_switcher' in display_content and page_info.pages_amount >= 1 %}
-                    {% include 'body/content_area/page_switcher.html' %}
+                {% if 'about_me' in page_destinations %}
+                    {% include 'body/content_area/about_me.html' %}
+                {% endif %}
+                {% if 'contact' in page_destinations %}
+                    {% include 'body/content_area/contact.html' %}
                 {% endif %}
             </section>
-            {% include 'body/sidebar.html' %}
+            {% if 'sidebar' in display_elements %}
+                {% include 'body/sidebar.html' %}
+            {% endif %}
         </main>
         {% include 'body/footer.html' %}
     </body>

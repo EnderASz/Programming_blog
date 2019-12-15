@@ -22,11 +22,33 @@ def start_page(request, page_number=1):
                 'page_destinations' : ['start_page', 'posts_list'],
                 'avaible_tags' : template_funcs.get_all_tags(),
                 'recent_posts' : template_funcs.get_recent_posts(all_posts),
-                'display_content': ['post_wrapper', 'page_switcher'],
+                'display_elements': ['post_wrapper', 'page_switcher', 'sidebar'],
                 'posts_wrap': posts_wrap,
                 'page_info': {
                     'pages_amount': all_posts.count()//max_posts_per_page,
                     'current_page': page_number,
                 }
             }
+    )
+
+def about_me_page(request):
+    return render(
+        request,
+        'standard_template.html',
+        {
+        'title': "O mnie",
+        'page_destinations': ["context", "about_me"],
+        'display_elements': []
+        }
+    )
+
+def contact_page(request):
+    return render(
+        request,
+        'standard_template.html',
+        {
+        'title': "Kontakt",
+        'page_destinations': ["context", "contact"],
+        'display_elements': []
+        }
     )
