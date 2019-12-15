@@ -121,7 +121,7 @@ main {
     &>header {
         h2 {
             font-family: 'Cabin';
-            font-size: 40px;
+            font-size: 37px;
             font-weight: bold;
             color: var(--secondary-color);
             margin: 0;
@@ -141,6 +141,9 @@ main {
         @media screen and (max-width: 980px) {
             width: 100%;
             float: none;
+        }
+        &.wide {
+            width: 85%;
         }
 
         .context_writer {
