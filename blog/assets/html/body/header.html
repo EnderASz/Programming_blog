@@ -13,12 +13,12 @@
                 </a>
             </li>
             <li>
-                <a href="/" class="{% if 'about_me' in page_destinations %} active {% endif %} bold_link">
+                <a href="{% url 'about_me_page' %}" class="{% if 'about_me' in page_destinations %} active {% endif %} bold_link">
                     O mnie
                 </a>
             </li>
             <li>
-                <a href="/" class="{% if 'contact' in page_destinations %} active {% endif %} bold_link">
+                <a href="{% about_me_page %}" class="{% if 'contact' in page_destinations %} active {% endif %} bold_link">
                     Kontakt
                 </a>
             </li>
