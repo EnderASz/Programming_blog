@@ -121,7 +121,7 @@ main {
     &>header {
         h2 {
             font-family: 'Cabin';
-            font-size: 24px;
+            font-size: 40px;
             font-weight: bold;
             color: var(--secondary-color);
             margin: 0;
@@ -141,6 +141,20 @@ main {
         @media screen and (max-width: 980px) {
             width: 100%;
             float: none;
+        }
+
+        .context_writer {
+            font-family: 'Ubuntu';
+            font-size: 17px;
+            color: var(--secondary-color);
+            h5 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            h6 {
+                font-weight: bold;
+                font-size: 25px;
+            }
         }
 
         #post_wrapper {

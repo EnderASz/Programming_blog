@@ -27,17 +27,17 @@
                 {% endif %}
             </header>
             <section id="content_area" class="container">
-                {% if 'post_wrapper' in display_elements %}
-                    {% include 'body/content_area/post_wrapper.html' %}
-                    {% if 'page_switcher' in display_elements and page_info.pages_amount >= 1 %}
-                        {% include 'body/content_area/page_switcher.html' %}
-                    {% endif %}
-                {% endif %}
                 {% if 'about_me' in page_destinations %}
                     {% include 'body/content_area/about_me.html' %}
                 {% endif %}
                 {% if 'contact' in page_destinations %}
                     {% include 'body/content_area/contact.html' %}
+                {% endif %}
+                {% if 'post_wrapper' in display_elements %}
+                    {% include 'body/content_area/post_wrapper.html' %}
+                    {% if 'page_switcher' in display_elements and page_info.pages_amount >= 1 %}
+                        {% include 'body/content_area/page_switcher.html' %}
+                    {% endif %}
                 {% endif %}
             </section>
             {% if 'sidebar' in display_elements %}
