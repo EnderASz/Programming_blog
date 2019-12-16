@@ -146,17 +146,25 @@ main {
             width: 85%;
         }
 
-        .context_writer {
+        section.context_writer {
             font-family: 'Ubuntu';
             font-size: 17px;
             color: var(--secondary-color);
-            h5 {
+            article {
+                p {
+                    margin: 10px 0px 0px 35px;
+                }
+                h6 {
+                    margin: 5px 0px 0px 35px;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                header>h5 {
+                margin: 0;
+                margin-top: 5px;
                 font-size: 30px;
                 font-weight: bold;
             }
-            h6 {
-                font-weight: bold;
-                font-size: 25px;
             }
         }
 
@@ -272,10 +280,10 @@ main {
 
                 .widget_title{
                     margin: 0px;
-                    padding: 15px 3px;
+                    padding: 15px;
                     font-family: 'Cabin';
                     font-weight: bold;
-                    font-size: 20px;
+                    font-size: 21px;
                     color: #FFFFFF;
                 }
             }
