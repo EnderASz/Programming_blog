@@ -39,7 +39,7 @@ def about_me_page(request):
         'title': "O mnie",
         'page_destinations': ["context", "about_me"],
         'display_elements': [],
-        'test': "<h1>test</h1>"
+        'test': "<h1>test</h1>",
         }
     )
 
@@ -50,6 +50,6 @@ def contact_page(request):
         {
         'title': "Kontakt",
         'page_destinations': ["context", "contact"],
-        'display_elements': []
+        'display_elements': [],
         }
     )

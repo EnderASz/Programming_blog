@@ -18,4 +18,3 @@ class Post(models.Model):
     date_add = models.DateField(auto_now_add=True)
     authors = models.ManyToManyField(Author)
     tags = models.ManyToManyField(Tag)
-    post_excerpt = models.CharField(max_length=300)
