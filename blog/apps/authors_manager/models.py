@@ -7,7 +7,7 @@ class Author(models.Model):
     author_name = models.CharField(max_length=40, unique=True)
     author_slug = models.SlugField(max_length=20, unique=True)
     user = models.ForeignKey(
-        'User',
+        User,
         on_delete=models.CASCADE,
         unique=True,
     )
