@@ -11,8 +11,8 @@ class Post(models.Model):
     post_title = models.CharField(max_length=35, unique=True)
     post_slug = models.SlugField(max_length=40, unique=True)
     post_image = models.ImageField(
-        upload_to=static('posts_content/images/thumbnails/')[1:],
-        default=static('img/bitmap/no_image.png')[1:]
+        upload_to='posts_content/images/thumbnails/',
+        default='img/bitmap/no_image.png',
     )
     post_content = models.TextField()
     date_add = models.DateField(auto_now_add=True)

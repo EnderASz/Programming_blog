@@ -1,8 +1,9 @@
+{% load static %}
 <section id="post_wrapper">
     {% for post in posts_wrap %}
         <article id="post-{{post.post_id}}">
             <a href="post/{{post.post_slug}}" id="post_image">
-                <img src="{{post.post_image}}">
+                <img src="{% static post.post_image %}">
             </a>
             <section id="post_content">
                 <header id="post_header">
