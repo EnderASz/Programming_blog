@@ -17,8 +17,10 @@ def tag_search(request, tag_slug, page_number=0):
                 'page_destination': 'search',
                 'search_by': 'tag',
                 'searching_object': "#tag name#",
-                'avaible_tags' : template_funcs.get_all_tags(),
-                'recent_posts' : template_funcs.get_recent_posts(),
+                'sidebar': {
+                    'avaible_tags' : template_funcs.get_tags_list(),
+                    'recent_posts' : template_funcs.get_recent_posts(all_posts),
+                },
                 'display_elements': ['sidebar', 'post_wrapper', 'page_switcher'],
                 'posts_wrap': posts,
                 'page_info': {
@@ -39,8 +41,10 @@ def author_search(request, author_slug, page_number=0):
                 'page_destination': 'search',
                 'search_by': 'author',
                 'searching_object': "#author name#",
-                'avaible_tags' : template_funcs.get_all_tags(),
-                'recent_posts' : template_funcs.get_recent_posts(),
+                'sidebar': {
+                    'avaible_tags' : template_funcs.get_tags_list(),
+                    'recent_posts' : template_funcs.get_recent_posts(all_posts),
+                },
                 'display_elements': ['sidebar', 'post_wrapper', 'page_switcher'],
                 'posts_wrap': posts,
                 'page_info': {
