@@ -16,5 +16,5 @@ class Post(models.Model):
     )
     post_content = models.TextField()
     date_add = models.DateField(auto_now_add=True)
-    author = models.ForeignKey(Author)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag)
