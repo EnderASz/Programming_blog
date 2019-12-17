@@ -12,7 +12,10 @@ def post_view(request, post_slug):
             'title': post.post_title,
             'page_destinations': ['post_view'],
             'display_elements': ['sidebar', 'post_viewer'],
-            'sidebar': template_funcs.get_sidebar_values(),
+            'sidebar': {
+                'avaible_tags' : template_funcs.get_tags_list(),
+                'recent_posts' : template_funcs.get_recent_posts(),
+            },
             'post': post,
         }
     )
