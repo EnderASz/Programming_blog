@@ -15,12 +15,9 @@
                         {{post.date_add}}
                         &#9675;
 
-                        {% for author in post.authors.all %}
-                            <a id="author-{{author.author_id}}" href="{% url 'search-by-author' author_slug=author.author_slug %}">
-                                {{author.author_name}}
-                            </a>
-                            {% if not forloop.last %}|{% endif %}
-                        {% endfor %}
+                        <a id="author-{{post.author.author_id}}" href="{% url 'search-by-author' author_slug=post.author.author_slug %}">
+                            {{post.author.author_name}}
+                        </a>
                         &#9675;
 
                         {% for tag in post.tags.all %}
