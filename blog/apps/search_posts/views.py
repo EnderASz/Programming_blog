@@ -8,7 +8,7 @@ from assets.python import std_template_funcs as template_funcs
 
 def tag_search(request, tag_slug, page_number=0):
     tag = Tag.objects.get(tag_slug=tag_slug)
-    posts = Post.objects.filter(tags=tag)
+    posts = Post.objects.filter(tags=tag).order_by('-date_add')
     return render(
         request,
         'standard_template.html',
@@ -19,7 +19,7 @@ def tag_search(request, tag_slug, page_number=0):
                 'searching_object': "#tag name#",
                 'sidebar': {
                     'avaible_tags' : template_funcs.get_tags_list(),
-                    'recent_posts' : template_funcs.get_recent_posts(all_posts),
+                    'recent_posts' : template_funcs.get_recent_posts(),
                 },
                 'display_elements': ['sidebar', 'post_wrapper', 'page_switcher'],
                 'posts_wrap': posts,
@@ -32,7 +32,7 @@ def tag_search(request, tag_slug, page_number=0):
 
 def author_search(request, author_slug, page_number=0):
     author = Author.objects.get(author_slug=author_slug)
-    posts = Post.objects.filter(author=author)
+    posts = Post.objects.filter(author=author).order_by('-date_add')
     return render(
         request,
         'standard_template.html',
@@ -43,7 +43,7 @@ def author_search(request, author_slug, page_number=0):
                 'searching_object': "#author name#",
                 'sidebar': {
                     'avaible_tags' : template_funcs.get_tags_list(),
-                    'recent_posts' : template_funcs.get_recent_posts(all_posts),
+                    'recent_posts' : template_funcs.get_recent_posts(),
                 },
                 'display_elements': ['sidebar', 'post_wrapper', 'page_switcher'],
                 'posts_wrap': posts,
