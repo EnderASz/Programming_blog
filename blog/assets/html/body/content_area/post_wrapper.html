@@ -3,13 +3,13 @@
 <section id="post_wrapper">
     {% for post in posts_wrap %}
         <article id="post-{{post.post_id}}">
-            <a href="post/{{post.post_slug}}" id="post_image">
+            <a href="{% url 'post_view' post_slug=post.post_slug %}" id="post_image">
                 <img src="{{assets}}{{post.post_image.url}}">
             </a>
             <section id="post_content">
                 <header id="post_header">
                     <h3 id="post_title">
-                        <a href="post/{{post.post_slug}}">
+                        <a href="{% url 'post_view' post_slug=post.post_slug %}">
                             {{post.post_title}}
                         </a>
                     </h3>
