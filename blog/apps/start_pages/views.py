@@ -22,7 +22,7 @@ def start_page(request, page_number=1):
                 'page_destinations' : ['start_page', 'posts_list'],
                 'sidebar': {
                     'avaible_tags' : template_funcs.get_tags_list(),
-                    'recent_posts' : template_funcs.get_recent_posts(posts_list),
+                    'recent_posts' : template_funcs.get_recent_posts(all_posts),
                 },
                 'display_elements': ['post_wrapper', 'page_switcher', 'sidebar'],
                 'posts_wrap': posts_wrap,
