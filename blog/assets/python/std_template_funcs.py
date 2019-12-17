@@ -16,7 +16,7 @@ def get_tags_list():
 
 def get_sidebar_values(posts_list=None):
     if not posts_list:
-        posts_list = Post.object.order_by('-date_add')
+        posts_list = Post.objects.order_by('-date_add')
     return {
         'avaible_tags' : get_tags_list(),
         'recent_posts' : get_recent_posts(posts_list),
