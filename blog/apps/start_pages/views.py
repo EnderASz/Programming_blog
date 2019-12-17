@@ -20,7 +20,7 @@ def start_page(request, page_number=1):
             {
                 'title': "Strona Startowa",
                 'page_destinations' : ['start_page', 'posts_list'],
-                'sidebar': get_sidebar_values(all_posts),
+                'sidebar': template_funcs.get_sidebar_values(all_posts),
                 'display_elements': ['post_wrapper', 'page_switcher', 'sidebar'],
                 'posts_wrap': posts_wrap,
                 'page_info': {

@@ -7,7 +7,7 @@ from apps.authors_manager.models import Author
 from assets.python import std_template_funcs as template_funcs
 
 def tag_search(request, tag_slug, page_number=0):
-    tag = Tag.object.get(tag_slug=tag_slug)
+    tag = Tag.objects.get(tag_slug=tag_slug)
     posts = Post.objects.filter(tags=tag)
     return render(
         request,
