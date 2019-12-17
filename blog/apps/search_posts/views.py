@@ -54,3 +54,6 @@ def author_search(request, author_slug, page_number=0):
                 }
             }
     )
+
+def word_search(request, page_number=0):
+    pass
