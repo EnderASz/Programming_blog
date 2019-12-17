@@ -228,6 +228,14 @@ main {
             }
         }
 
+        .context_writer.post {
+            &>header {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
         #page_switcher{
             margin: 0px;
             text-align: center;
@@ -261,7 +269,7 @@ main {
     }
 
     #sidebar {
-        padding: 0px 25px;
+        padding: 0px 20px;
         margin: 0px;
         text-align: initial;
 
