@@ -9,7 +9,7 @@
             <h3 class="widget_title">Ostatnie Posty</h3>
         </header>
         <ol id="recent-posts_list">
-            {% for post in recent_posts %}
+            {% for post in sidebar.recent_posts %}
                 <li>
                     <a id="post-{{post.post_id}}" href="post/{{post.post_slug}}">{{post.post_title}}</a>
                 </li>
@@ -21,7 +21,7 @@
             <h3 class="widget_title">Kategorie</h3>
         </header>
         <ul id="tags_list">
-            {% for tag in avaible_tags %}
+            {% for tag in sidebar.avaible_tags %}
                 <li>
                     <a href="{% url 'search-by-tag' tag_slug=tag.tag_slug %}">{{tag.tag_name}}</a>
                 </li>

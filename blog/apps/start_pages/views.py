@@ -20,8 +20,7 @@ def start_page(request, page_number=1):
             {
                 'title': "Strona Startowa",
                 'page_destinations' : ['start_page', 'posts_list'],
-                'avaible_tags' : template_funcs.get_all_tags(),
-                'recent_posts' : template_funcs.get_recent_posts(all_posts),
+                'sidebar': get_sidebar_values(all_posts),
                 'display_elements': ['post_wrapper', 'page_switcher', 'sidebar'],
                 'posts_wrap': posts_wrap,
                 'page_info': {
@@ -37,9 +36,8 @@ def about_me_page(request):
         'standard_template.html',
         {
         'title': "O mnie",
-        'page_destinations': ["context", "about_me"],
+        'page_destinations': ["wide_content_area", "about_me"],
         'display_elements': [],
-        'test': "<h1>test</h1>",
         }
     )
 
@@ -49,7 +47,7 @@ def contact_page(request):
         'standard_template.html',
         {
         'title': "Kontakt",
-        'page_destinations': ["context", "contact"],
+        'page_destinations': ["wide_content_area", "contact"],
         'display_elements': [],
         }
     )

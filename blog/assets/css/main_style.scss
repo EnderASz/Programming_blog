@@ -34,7 +34,9 @@ hr {
 }
 
 a {
-    text-decoration: none;
+    &:not(.inText) {
+        text-decoration: none;
+    }
     &.bold_link {
         color: var(--secondary-color);
         transition: color 0.2s;

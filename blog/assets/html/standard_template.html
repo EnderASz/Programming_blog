@@ -26,7 +26,7 @@
                     </h2>
                 {% endif %}
             </header>
-            <section id="content_area" class="container">
+            <section id="content_area" class="container {% if 'wide_content_area' in page_destinations %} wide {% endif %}">
                 {% if 'about_me' in page_destinations %}
                     {% include 'body/content_area/about_me.html' %}
                 {% endif %}
@@ -35,10 +35,15 @@
                 {% endif %}
                 {% if 'post_wrapper' in display_elements %}
                     {% include 'body/content_area/post_wrapper.html' %}
+                {% endif %}
+                {% if 'post_view' in page_destinations %}
+                    {% include 'body/content_area/post_viewer.html' %}
+                {% endif %}
+                <footer>
                     {% if 'page_switcher' in display_elements and page_info.pages_amount >= 1 %}
                         {% include 'body/content_area/page_switcher.html' %}
                     {% endif %}
-                {% endif %}
+                </footer>
             </section>
             {% if 'sidebar' in display_elements %}
                 {% include 'body/sidebar.html' %}

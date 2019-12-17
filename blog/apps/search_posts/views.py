@@ -6,7 +6,9 @@ from apps.authors_manager.models import Author
 
 from assets.python import std_template_funcs as template_funcs
 
-def tag_search(request, tag_slug):
+def tag_search(request, tag_slug, page_number=0):
+    tag = Tag.object.get(tag_slug=tag_slug)
+    posts = Post.objects.filter(tags=tag)
     return render(
         request,
         'standard_template.html',
@@ -17,11 +19,18 @@ def tag_search(request, tag_slug):
                 'searching_object': "#tag name#",
                 'avaible_tags' : template_funcs.get_all_tags(),
                 'recent_posts' : template_funcs.get_recent_posts(),
-                'display_elements': ['sidebar'],
+                'display_elements': ['sidebar', 'post_wrapper', 'page_switcher'],
+                'posts_wrap': posts,
+                'page_info': {
+                    'pages_amount': posts.count()//settings.POSTSLISTING['MAX_POSTS_PER_PAGE'],
+                    'current_page': page_number,
+                }
             }
     )
 
-def author_search(request, tag_slug):
+def author_search(request, author_slug, page_number=0):
+    author = Author.objects.get(author_slug=author_slug)
+    posts = Post.objects.filter(author=author)
     return render(
         request,
         'standard_template.html',
@@ -32,6 +41,11 @@ def author_search(request, tag_slug):
                 'searching_object': "#author name#",
                 'avaible_tags' : template_funcs.get_all_tags(),
                 'recent_posts' : template_funcs.get_recent_posts(),
-                'display_elements': ['sidebar'],
+                'display_elements': ['sidebar', 'post_wrapper', 'page_switcher'],
+                'posts_wrap': posts,
+                'page_info': {
+                    'pages_amount': posts.count()//settings.POSTSLISTING['MAX_POSTS_PER_PAGE'],
+                    'current_page': page_number,
+                }
             }
     )
