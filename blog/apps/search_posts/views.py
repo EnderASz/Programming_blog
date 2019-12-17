@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.conf import settings
 
 from apps.posts_manager.models import Post
 from apps.tags_manager.models import Tag
