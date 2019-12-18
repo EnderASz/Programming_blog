@@ -13,12 +13,8 @@
 {% include 'head/load_fonts.html' %}
 
 {% compress css %}
-    <link
-        rel="stylesheet"
-        type="text/x-scss"
-        href="{% static 'css/main_style.scss' %}"
-    />
+    <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main_style.scss' %}"/>
 {% endcompress %}
 
 <script type="text/javascript" src="{% static 'js/preload.js' %}"></script>
-<script defer type="text/javascript" src="{% static 'js/nav_toggle.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/nav_toggle.js' %}"></script>

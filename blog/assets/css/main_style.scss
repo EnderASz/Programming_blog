@@ -220,7 +220,7 @@ main {
                     #post_excerpt {
                         font-family: 'Ubuntu';
                         font-size: 15px;
-                        @media screen and (max-width: 1300px){
+                        @media screen and (max-width: 1300px) and (min-width: 981px){
                             display: none;
                         }
                     }
