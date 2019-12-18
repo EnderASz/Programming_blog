@@ -4,8 +4,8 @@
     <a href="{% url 'start_page' %}">
         <img src='{% static "img/bitmap/logo-large.png" %}'/>
     </a>
+    <button id="nav_toggle_bt" onclick="toggle_bar();"></button>
     <nav>
-        <button id="nav_toggle_bt" onclick="toggle_bar();"></button>
         <ul id="nav_list" class="">
             <li>
                 <a href="{% url 'start_page' %}" class="{% if 'start_page' in page_destinations %} active {% endif %} bold_link">
