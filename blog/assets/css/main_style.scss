@@ -300,18 +300,11 @@ main {
                     color: #FFFFFF;
                 }
             }
-            #tags_list, #recent-posts_list {
-                @media screen and (min-width: 480px) and (max-width: 980px) {
-                    width: 48%;
-                    &#tags_list {
-                        margin-left: 1%
-                    }
-                    &#recent-posts_list {
-                        margin-right: 1%
-                    }
-                }
-            }
             #tags_list {
+                @media screen and (min-width: 480px) and (max-width: 980px) {
+                    margin-left: 1%;
+                    width: 48%;
+                }
                 list-style-type: square;
                 padding-left: 25px;
                 li {
@@ -335,6 +328,10 @@ main {
                 }
             }
             #recent-posts_list {
+                @media screen and (min-width: 480px) and (max-width: 980px) {
+                    margin-right: 1%;
+                    width: 48%;
+                }
                 padding-left: 22px;
                 li {
                     font-family: 'Arvo';
