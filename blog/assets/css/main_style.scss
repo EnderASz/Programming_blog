@@ -300,6 +300,17 @@ main {
                     color: #FFFFFF;
                 }
             }
+            #tags_list, #recent-posts_list {
+                @media screen and (min-width: 480px) and (max-width: 980px) {
+                    width: 48%;
+                    &#tags_list {
+                        margin-left: 1%
+                    }
+                    &#recent-posts_list {
+                        margin-right: 1%
+                    }
+                }
+            }
             #tags_list {
                 list-style-type: square;
                 padding-left: 25px;
