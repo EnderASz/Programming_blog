@@ -1,11 +1,15 @@
 html {
     height: 100%;
+    --first-font: "Cabin";
+    --second-font: "Arvo";
+    --tertiary-font: "Ubuntu";
     &[data_theme="light"]{
         --bg-color: #FFFFFF;
         --primary-color: #689EE0;
         --secondary-color: #000000;
         --tertiary-color: #689EE0;
         --quaternary-color: #6b7577;
+
     }
     &[data-theme='dark']{
 
@@ -65,7 +69,7 @@ a {
     nav {
         float: right;
         display: inline-block;
-        font-family: 'Cabin';
+        font-family: var(--first-font);
         font-weight: bold;
         text-decoration: none;
         font-size: 18px;
@@ -123,7 +127,7 @@ main {
 
     &>header {
         h2 {
-            font-family: 'Cabin';
+            font-family: var(--first-font);
             font-size: 34px;
             font-weight: bold;
             color: var(--secondary-color);
@@ -150,7 +154,7 @@ main {
         }
 
         section.context_writer {
-            font-family: 'Ubuntu';
+            font-family: var(--tertiary-font);
             font-size: 17px;
             color: var(--secondary-color);
             article {
@@ -183,7 +187,7 @@ main {
                     padding-left: 1%;
                     #post_header {
                         #post_title {
-                            font-family: 'Cabin';
+                            font-family: var(--first-font);
                             font-weight: bold;
                             font-size: 24px;
                             margin: 0 0 5px 0;
@@ -205,7 +209,7 @@ main {
                             transition: font-size 1s;
                         }
                         #post_meta {
-                            font-family: 'Cabin';
+                            font-family: var(--first-font);
                             color: var(--quaternary-color);
                             font-size: 11px;
                             a {
@@ -218,7 +222,7 @@ main {
                         }
                     }
                     #post_excerpt {
-                        font-family: 'Ubuntu';
+                        font-family: var(--tertiary-font);
                         font-size: 15px;
                         @media screen and (max-width: 1300px){
                             display: none;
@@ -246,7 +250,7 @@ main {
                 list-style-type: none;
                 li {
                     box-sizing: border-box;
-                    font-family: 'Cabin';
+                    font-family: var(--first-font);
                     font-size: 15px;
                     float: left;
                     height: 25px;
@@ -292,7 +296,7 @@ main {
                 .widget_title{
                     margin: 0px;
                     padding: 15px;
-                    font-family: 'Cabin';
+                    font-family: var(--first-font);
                     font-weight: bold;
                     font-size: 21px;
                     color: #FFFFFF;
@@ -311,7 +315,7 @@ main {
                         top: 1px;
 
                         font-size: 14.6px;
-                        font-family: 'Arvo';
+                        font-family: var(--second-font);
                         text-decoration: none;
                         color: var(--primary-color);
                         &:hover {
@@ -324,7 +328,7 @@ main {
             #recent-posts_list {
                 padding-left: 22px;
                 li {
-                    font-family: 'Arvo';
+                    font-family: var(--second-font);
                     font-size: 13.4px;
                     padding-bottom: 4px;
                     a {
@@ -356,7 +360,7 @@ footer {
             margin: 0px;
             padding: 15px 20px;
 
-            font-family: 'Ubuntu';
+            font-family: var(--tertiary-font);
             font-size: 0.85em;
         }
     }
