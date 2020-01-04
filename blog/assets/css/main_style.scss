@@ -65,7 +65,14 @@ a {
         height: 100px;
         width: auto;
     }
-
+    #nav_toggle_bt {
+        display: none;
+        @media screen and (max-width: 964px) {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+    }
     nav {
         float: right;
         display: inline-block;
@@ -74,14 +81,6 @@ a {
         text-decoration: none;
         font-size: 18px;
         margin: 24px 0px 24px 0px;
-        button {
-            display: none;
-            @media screen and (max-width: 964px) {
-                display: inline-block;
-                width: 50px;
-                height: 50px;
-            }
-        }
         #nav_list {
             margin: 0px;
             list-style-type: none;
@@ -145,6 +144,9 @@ main {
 
         width: 70%;
         float: left;
+        &.container {
+            padding-left: 0;
+        }
         @media screen and (max-width: 980px) {
             width: 100%;
             float: none;
@@ -224,7 +226,7 @@ main {
                     #post_excerpt {
                         font-family: var(--tertiary-font);
                         font-size: 15px;
-                        @media screen and (max-width: 1300px){
+                        @media screen and (max-width: 1300px) and (min-width: 981px){
                             display: none;
                         }
                     }
@@ -303,6 +305,10 @@ main {
                 }
             }
             #tags_list {
+                @media screen and (min-width: 480px) and (max-width: 980px) {
+                    margin-left: 1%;
+                    width: 48%;
+                }
                 list-style-type: square;
                 padding-left: 25px;
                 li {
@@ -326,6 +332,10 @@ main {
                 }
             }
             #recent-posts_list {
+                @media screen and (min-width: 480px) and (max-width: 980px) {
+                    margin-right: 1%;
+                    width: 48%;
+                }
                 padding-left: 22px;
                 li {
                     font-family: var(--second-font);
