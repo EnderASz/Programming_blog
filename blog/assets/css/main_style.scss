@@ -304,16 +304,16 @@ main {
                     color: #FFFFFF;
                 }
             }
-            #search-box {
+            &#search-box {
                 background-color: var(--primary-color);
                 form {
                     #search_box_widget{
-                        &>[name="search_box"] {
+                        [name="search_box"] {
                             &::placeholder {
 
                             }
                         }
-                        &>[name="submit"]{
+                        [name="submit"]{
                             float: right;
                         }
                     }
