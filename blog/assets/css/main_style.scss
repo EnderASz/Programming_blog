@@ -324,6 +324,10 @@ main {
 
                             border-style: none;
                             color: var(--bg-color);
+                            img {
+                                height: 40px;
+                                width: 40px;
+                            }
                             &:focus {
                                 outline: 0;
                                 border-style: none;
