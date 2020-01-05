@@ -306,10 +306,10 @@ main {
             }
             &#search-box {
                 form {
-                    &->input{
+                    &>input{
                         &[type="search"] {
                             &::placeholder {
-                                
+
                             }
                         }
                     }
