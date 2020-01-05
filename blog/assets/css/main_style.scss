@@ -309,9 +309,7 @@ main {
                 form {
                     #search_box_widget{
                         [name="search_box"] {
-                            &::placeholder {
-
-                            }
+                            w
                         }
                         [name="submit"]{
                             float: right;
@@ -326,7 +324,7 @@ main {
                     }
                 }
             }
-            #tags_list {
+            &#tags_list {
                 @media screen and (min-width: 480px) and (max-width: 980px) {
                     margin-left: 1%;
                     width: 48%;
