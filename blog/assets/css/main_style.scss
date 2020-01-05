@@ -305,6 +305,7 @@ main {
                 }
             }
             #search-box {
+                background-color: var(--primary-color);
                 form {
                     #search_box_widget{
                         &>[name="search_box"] {
@@ -318,6 +319,7 @@ main {
                     }
                     #additional_options{
                         background-color: var(--primary-color);
+                        width: 100%;
                         [name="checkbox_description"]{
 
                         }
