@@ -306,7 +306,7 @@ main {
             }
             #search-box {
                 form {
-                    #search_box{
+                    #search_box_widget{
                         &>[name="search_box"] {
                             &::placeholder {
 
@@ -317,7 +317,7 @@ main {
                         }
                     }
                     #additional_options{
-                        background-color: var(--primary-color)
+                        background-color: var(--primary-color);
                         [name="checkbox_description"]{
 
                         }
