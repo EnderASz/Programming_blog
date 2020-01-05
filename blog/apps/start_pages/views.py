@@ -3,7 +3,6 @@ from django.conf import settings
 
 from apps.posts_manager.models import Post
 from apps.tags_manager.models import Tag
-from apps.searh_posts import SearchForm
 
 from assets.python import std_template_funcs as template_funcs
 
