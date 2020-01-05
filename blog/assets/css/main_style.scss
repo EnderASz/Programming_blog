@@ -306,16 +306,28 @@ main {
             }
             &#search-box {
                 background-color: var(--primary-color);
+                border
                 form {
                     #search_box_widget{
                         [name="search_box"] {
                             height: 40px;
                             width: calc(100% - 40px);
+
+                            border-style: none;
+                            &:focus {
+                                border-style: none;
+                            }
                         }
                         [type="submit"]{
                             height: 40px;
                             width: 40px;
                             float: right;
+
+                            border-style: none;
+                            color: var(--bg-color);
+                            &:focus {
+                                border-style: none;
+                            }
                         }
                     }
                     #additional_options{
