@@ -321,12 +321,13 @@ main {
                             height: 40px;
                             width: 40px;
                             float: right;
+                            padding: 3;
 
                             border-style: none;
                             color: var(--bg-color);
                             img {
-                                height: 40px;
-                                width: 40px;
+                                height: 37px;
+                                width: 37px;
                             }
                             &:focus {
                                 outline: 0;
