@@ -2,9 +2,13 @@
     <aside id="search-box">
         <form>
             {% csrf_token %}
-            <input type="search" name="search_box" placeholder="Wyszukaj frazę..."/>
-            <input type="submit" name="submit"/>
-            <input type="checkbox" name="description_searcher"/>
+            <section id="search_box">
+                <input type="search" name="search_box" placeholder="Wyszukaj frazę..."/>
+                <input type="submit" name="submit"/>
+            </section>
+            <section id="additional_options">
+                <input type="checkbox" name="checkbox_description"/>
+            </section>
         </form>
     </aside>
     <aside id="recent-posts">

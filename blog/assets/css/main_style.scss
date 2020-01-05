@@ -306,11 +306,20 @@ main {
             }
             #search-box {
                 form {
-                    &>input{
-                        &[type="search"] {
+                    #search_box{
+                        &>[name="search_box"] {
                             &::placeholder {
 
                             }
+                        }
+                        &>[name="submit"]{
+                            float: right;
+                        }
+                    }
+                    #additional_options{
+                        background-color: var(--primary-color)
+                        [name="checkbox_description"]{
+
                         }
                     }
                 }
