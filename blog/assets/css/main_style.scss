@@ -309,12 +309,12 @@ main {
                 form {
                     #search_box_widget{
                         [name="search_box"] {
-                            height: 100px;
-                            width: calc(100% - 100px);
+                            height: 40px;
+                            width: calc(100% - 40px);
                         }
                         [name="submit"]{
-                            height: 100px;
-                            width: 100px;
+                            height: 40px;
+                            width: 40px;
                             float: right;
                         }
                     }
