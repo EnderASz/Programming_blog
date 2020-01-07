@@ -305,9 +305,9 @@ main {
                 }
             }
             &#search-box {
-                background-color: var(--primary-color);
                 form {
                     #search_box_widget{
+                        background-color: var(--primary-color);
                         [name="search_box"] {
                             height: 40px;
                             width: calc(100% - 40px);
@@ -343,7 +343,8 @@ main {
                     #additional_options{
                         margin: 3px 0px;
                         width: 100%;
-                        font-family: var(--secondary-font);
+                        font-family: var(--tertiary-font);
+                        font-size: 15px;
                         ul {
                             margin: 5px 0px;
                             padding-left: 5px;
