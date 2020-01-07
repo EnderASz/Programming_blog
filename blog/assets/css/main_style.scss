@@ -343,9 +343,12 @@ main {
                     #additional_options{
                         background-color: var(--primary-color);
                         width: 100%;
-                        ul>li {
-                            &#checkbox_description {
-                                vertical-align: middle;
+                        ul {
+                            list-style-type: none;
+                            &>li {
+                                &#checkbox_description {
+                                    vertical-align: middle;
+                                }
                             }
                         }
                     }
