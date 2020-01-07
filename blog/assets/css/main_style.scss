@@ -313,6 +313,11 @@ main {
                             width: calc(100% - 40px);
 
                             border-style: none;
+                            padding-left: 7px;
+
+                            font-family: var(--tertiary-font);
+                            font-size: 17px;
+
                             &:focus {
                                 border-style: none;
                             }
@@ -326,8 +331,8 @@ main {
                             border-style: none;
                             color: var(--bg-color);
                             img {
-                                height: 37px;
-                                width: 37px;
+                                height: 100%;
+                                width: 100%;
                             }
                             &:focus {
                                 outline: 0;
@@ -338,8 +343,10 @@ main {
                     #additional_options{
                         background-color: var(--primary-color);
                         width: 100%;
-                        [name="checkbox_description"]{
-
+                        ul>li {
+                            &#checkbox_description {
+                                vertical-align: middle;
+                            }
                         }
                     }
                 }
