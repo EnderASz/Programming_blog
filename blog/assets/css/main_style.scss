@@ -344,6 +344,8 @@ main {
                         background-color: var(--primary-color);
                         width: 100%;
                         ul {
+                            margin: 0px 5px;
+                            padding-left: 5px;
                             list-style-type: none;
                             &>li {
                                 &#checkbox_description {
