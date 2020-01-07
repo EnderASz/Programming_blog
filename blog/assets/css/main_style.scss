@@ -298,10 +298,16 @@ main {
                 .widget_title{
                     margin: 0px;
                     padding: 15px;
+
                     font-family: var(--primary-font);
                     font-weight: bold;
-                    font-size: 21px;
                     color: #FFFFFF;
+                    &h3 {
+                        font-size: 21px;
+                    }
+                    &h4 {
+                        padding-left: 12px;
+                    }
                 }
             }
             &#search-box {

@@ -3,11 +3,16 @@
     <aside id="search-box">
         <form>
             {% csrf_token %}
-            <section id="search_box_widget">
-                <input type="search" name="search_box" placeholder="Wyszukaj frazę..."/>
-                <button id="submit" type="submit"><img src="{% static 'img/vector/search_icon.svg' %}"></button>
-            </section>
+            <header class="widget_header">
+                <section id="search_box_widget">
+                    <input type="search" name="search_box" placeholder="Wyszukaj frazę..."/>
+                    <button id="submit" type="submit"><img src="{% static 'img/vector/search_icon.svg' %}"></button>
+                </section>
+            </header>
             <section id="additional_options">
+                <header class="widget_header">
+                    <h4 class="widget_title">Dodatkowe opcje</h4>
+                </header>
                 <ul>
                     <li id="checkbox_description">
                         <input type="checkbox" name="checkbox_description"/>
