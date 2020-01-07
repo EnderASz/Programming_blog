@@ -1,7 +1,7 @@
 html {
     height: 100%;
-    --first-font: "Cabin";
-    --second-font: "Arvo";
+    --primary-font: "Cabin";
+    --secondary-font: "Arvo";
     --tertiary-font: "Ubuntu";
     &[data_theme="light"]{
         --bg-color: #FFFFFF;
@@ -76,7 +76,7 @@ a {
     nav {
         float: right;
         display: inline-block;
-        font-family: var(--first-font);
+        font-family: var(--primary-font);
         font-weight: bold;
         text-decoration: none;
         font-size: 18px;
@@ -126,7 +126,7 @@ main {
 
     &>header {
         h2 {
-            font-family: var(--first-font);
+            font-family: var(--primary-font);
             font-size: 34px;
             font-weight: bold;
             color: var(--secondary-color);
@@ -189,7 +189,7 @@ main {
                     padding-left: 1%;
                     #post_header {
                         #post_title {
-                            font-family: var(--first-font);
+                            font-family: var(--primary-font);
                             font-weight: bold;
                             font-size: 24px;
                             margin: 0 0 5px 0;
@@ -211,7 +211,7 @@ main {
                             transition: font-size 1s;
                         }
                         #post_meta {
-                            font-family: var(--first-font);
+                            font-family: var(--primary-font);
                             color: var(--quaternary-color);
                             font-size: 11px;
                             a {
@@ -252,7 +252,7 @@ main {
                 list-style-type: none;
                 li {
                     box-sizing: border-box;
-                    font-family: var(--first-font);
+                    font-family: var(--primary-font);
                     font-size: 15px;
                     float: left;
                     height: 25px;
@@ -298,7 +298,7 @@ main {
                 .widget_title{
                     margin: 0px;
                     padding: 15px;
-                    font-family: var(--first-font);
+                    font-family: var(--primary-font);
                     font-weight: bold;
                     font-size: 21px;
                     color: #FFFFFF;
@@ -341,9 +341,9 @@ main {
                         }
                     }
                     #additional_options{
-                        background-color: var(--primary-color);
                         margin: 3px 0px;
                         width: 100%;
+                        font-family: var(--secondary-font);
                         ul {
                             margin: 5px 0px;
                             padding-left: 5px;
@@ -364,7 +364,7 @@ main {
                 }
                 padding-left: 22px;
                 li {
-                    font-family: var(--second-font);
+                    font-family: var(--secondary-font);
                     font-size: 13.4px;
                     padding-bottom: 4px;
                     a {
@@ -399,7 +399,7 @@ main {
                         top: 1px;
 
                         font-size: 14.6px;
-                        font-family: var(--second-font);
+                        font-family: var(--secondary-font);
                         text-decoration: none;
                         color: var(--primary-color);
                         &:hover {
