@@ -3,6 +3,7 @@ html {
     --primary-font: "Cabin";
     --secondary-font: "Arvo";
     --tertiary-font: "Ubuntu";
+    --quaternary-font: "Montserrat";
     &[data_theme="light"]{
         --bg-color: #FFFFFF;
         --primary-color: #689EE0;
@@ -157,9 +158,8 @@ main {
         }
 
         .title {
-            font-family: var(--primary-font);
+            font-family: var(--quaternary-font);
             font-weight: bold;
-            font-size: 24px;
             margin: 0 0 5px 0;
             color: var(--primary-color);
             a {
@@ -230,6 +230,7 @@ main {
                     padding-left: 1%;
                     #post_header {
                         #post_title {
+                            font-size: 24px;
                             @media screen and (max-width: 600px) {
                                 font-size: 20px;
                             }
