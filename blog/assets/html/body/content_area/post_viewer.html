@@ -1,7 +1,7 @@
 {% load static %}
 {% static "" as assets %}
 <section class="context_writer post" id="post-{{post.post_id}}">
-    <header>
+    <header id="post_header">
         <center>
             <h1 id="post_title">{{post.post_title}}</h1>
             <nav id="post_meta">
@@ -24,6 +24,6 @@
         <img src="{{assets}}{{post.post_image.url}}">
     </header>
     <article id="post_content">
-        <h5>{{post.post_content}}</h5>
+        {{post.post_content}}
     </article>
 </section>
