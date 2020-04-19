@@ -161,6 +161,16 @@ main {
             font-weight: bold;
             font-size: 24px;
             margin: 0 0 5px 0;
+            color: var(--primary-color);
+            a {
+                text-decoration: none;
+                color: var(--primary-color);
+                transition: color 0.3s;
+                &:hover{
+                    color: var(--secondary-color);
+                    transition: color 0.3s;
+                }
+            }
         }
 
         nav#post_meta {
@@ -225,15 +235,6 @@ main {
                             }
                             @media screen and (max-width: 560px) {
                                 font-size: 18px;
-                            }
-                            a {
-                                text-decoration: none;
-                                color: var(--primary-color);
-                                transition: color 0.3s;
-                                &:hover{
-                                    color: var(--secondary-color);
-                                    transition: color 0.3s;
-                                }
                             }
                             transition: font-size 1s;
                         }
