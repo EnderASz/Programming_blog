@@ -176,7 +176,6 @@ main {
         nav#post_meta {
             font-family: var(--primary-font);
             color: var(--quaternary-color);
-            font-size: 11px;
             a {
                 text-decoration: none;
                 color: var(--quaternary-color);
@@ -208,13 +207,17 @@ main {
             }
             &.post {
                 &>header {
+                    width: 90%;
+                    margin-bottom: 15px;
                     h1#post_title {
                         font-size: 29px;
+                    }
+                    nav#post_meta {
+                        font-size: 11px;
                     }
                     img {
                         width: 100%;
                     }
-                    width: 90%;
                 }
             }
         }
@@ -224,6 +227,10 @@ main {
                 padding-bottom: 25px;
                 #post_image img {
                     width: 50%;
+                }
+
+                nav#post_meta {
+                    font-size: 11px;
                 }
                 #post_content {
                     width: 49%;
